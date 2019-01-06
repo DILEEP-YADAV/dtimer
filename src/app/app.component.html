@@ -1,0 +1,13 @@
+
+  <div *ngFor="let cat of items">
+        <div class="card" *ngFor="let product of cat.products">
+                
+                <div class="container">
+                        <timerc [dt]="product.timeend"></timerc>
+                  <h4><b>{{ product.name }}</b></h4> 
+                  <p>&#8377; {{ product.price }}</p> 
+                </div>
+              </div>
+  </div>
+  
+<router-outlet></router-outlet>
